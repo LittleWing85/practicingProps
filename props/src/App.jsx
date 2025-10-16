@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Presentational from "./Presentational";
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [isActive, setIsActive] = useState(false);
 
     return (
         <>
-            <h1>Sandbox</h1>
+            <Presentational active={isActive} toggle={setIsActive} />
         </>
     );
 }
